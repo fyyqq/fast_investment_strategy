@@ -16,6 +16,7 @@ print(f"Buy Transaction: ${txns}")
 print("-----------------------")
 
 print(f"🟢 50% Profit: ${fifty_percent_profit}")
+print(f"🔴 SELL 100% Profit: ${fifty_percent_profit - fee}")
 print("-----------------------")
-print(f"Total Wallet: ${fifty_percent_profit}")
+print(f"Total Wallet: ${fifty_percent_profit - fee}")
 print(f"Total Fee: ${fee}")
