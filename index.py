@@ -1,7 +1,7 @@
 a = 0.5 # 50%
 b = 1  # 75%
 
-capital = 10
+capital = 50
 fee = 0.35
 
 txns = (capital - 0.35)
@@ -21,8 +21,10 @@ print(f"Total Wallet: ${round(sell_half_fifty_percent_profit - fee, 2)}")
 print("-----------------------")
 
 print(f"🚀 Capital Run: ${sell_half_fifty_percent_profit}")
+
+print("-----------------------")
 print(f"🚀 50% Profit on Capital Run: ${sell_half_fifty_percent_profit + (sell_half_fifty_percent_profit) * a}")
-print(f"🔴 SELL HALF on Profit Capital Run: ${((sell_half_fifty_percent_profit + (sell_half_fifty_percent_profit) * a) / 2) - fee} to wallet")
+print(f"🔴 SELL HALF on Profit Capital Run: ${round(((sell_half_fifty_percent_profit + (sell_half_fifty_percent_profit) * a) / 2) - fee, 2)} to wallet")
 
 print("-----------------------")
 
@@ -32,5 +34,3 @@ print(f"🚀 Capital Run: ${(sell_half_fifty_percent_profit + (sell_half_fifty_p
 print("-----------------------")
 print(f"Total Wallet: ${round(round(sell_half_fifty_percent_profit - fee, 2) + ((sell_half_fifty_percent_profit + (sell_half_fifty_percent_profit) * a) / 2) - fee, 2)}")
 print("-----------------------")
-
-
