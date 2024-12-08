@@ -1,3 +1,6 @@
+# 1. PROFIT = 50% => TP = 50%
+# 2. PROFIT = 50% => TP = 50%
+
 a = 0.5 # 50%
 b = 1  # 75%
 
@@ -18,6 +21,7 @@ print(f"🔴 SELL HALF on 50% Profit: ${round(sell_half_fifty_percent_profit - f
 
 print("-----------------------")
 print(f"Total Wallet: ${round(sell_half_fifty_percent_profit - fee, 2)}")
+print(f"Total Fee: ${fee}")
 print("-----------------------")
 
 print(f"🚀 Capital Run: ${sell_half_fifty_percent_profit}")
@@ -33,4 +37,7 @@ print(f"🚀 Capital Run: ${(sell_half_fifty_percent_profit + (sell_half_fifty_p
 
 print("-----------------------")
 print(f"Total Wallet: ${round(round(sell_half_fifty_percent_profit - fee, 2) + ((sell_half_fifty_percent_profit + (sell_half_fifty_percent_profit) * a) / 2) - fee, 2)}")
+print(f"Total Fee: ${fee * 2}")
+print("-----------------------")
+print(f"ROI: ${round(round(round(sell_half_fifty_percent_profit - fee, 2) + ((sell_half_fifty_percent_profit + (sell_half_fifty_percent_profit) * a) / 2) - fee, 2) - txns) - (fee * 2)}")
 print("-----------------------")
